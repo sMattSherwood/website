@@ -1,0 +1,86 @@
+body
+{
+    background-color: #03256C;
+}
+.title
+{
+    color: #4281A4;
+    text-align: center;
+}
+.titleAtrabutes
+{
+    color:#4281A4;
+    position: relative;
+    top: -80px;
+    left: 130px;
+    font-size: 27px;
+}
+.dtTitle
+{
+    color: #75B9BE;
+    position:relative;
+    top: -80px;
+    left: 240px;
+    font-weight: 900;
+    font-size: 22px;
+
+}
+.textAtrabutes
+{
+    color: #75B9BE;
+    position:relative;
+    top: -80px;
+    left: 250px;
+    font-size: 20px;
+}
+
+.oval1
+{
+    position: relative;
+    left: 130px;
+    top: 140px;
+    width: 250px;
+    height: 150px;
+    background: #841c26;
+    border-radius: 100px / 60px;
+    
+}
+
+.oval1Text
+{
+    position: relative;
+    top: 170px;
+    left: 90px;
+}
+
+.oval2
+{
+    position: relative;
+    bottom: 100px;
+    left: 500px;
+    width: 250px;
+    height: 150px;
+    background: #841c26;
+    border-radius: 100px / 60px;
+}
+
+.oval2Text
+{
+
+}
+
+.oval3
+{
+    position: relative;
+    bottom: 150px;
+    left: 870px;
+    width: 250px;
+    height: 150px;
+    background: #841c26;
+    border-radius: 100px / 60px;
+    
+}
+.oval3Text
+{
+    
+}
