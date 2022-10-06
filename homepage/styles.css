@@ -1,15 +1,15 @@
 body
 {
-    background-color: #46409a;
+    background-color: #E5FCF5;
 }
 .title
 {
-    color: #4281A4;
+    color: #210124;
     text-align: center;
 }
 .titleAtrabutes
 {
-    color:#4281A4;
+    color:#2D3142;
     position: relative;
     top: -80px;
     left: 130px;
@@ -17,7 +17,7 @@ body
 }
 .dtTitle
 {
-    color: #75B9BE;
+    color: #426a50;
     position:relative;
     top: -80px;
     left: 240px;
@@ -27,7 +27,7 @@ body
 }
 .textAtrabutes
 {
-    color: #75B9BE;
+    color: #508361;
     position:relative;
     top: -80px;
     left: 250px;
@@ -41,9 +41,41 @@ body
     top: 140px;
     width: 250px;
     height: 150px;
-    background: #841c26;
+    background: #9cc8fa;
     border-radius: 100px / 60px;
+}
+
+.oval1Text
+{
+    position: relative;
+    top: 55px;
+    left: 90px;
+    font-size: 25px;
+    color:#43895a;
+}
+
+.oval1Pic
+{
+    top:10px;
+    right:20px;
+    transition: 1.3s;
+}
+
+.oval1Pic:hover
+{
+    animation: left-to-right 1.3s infinite;
     
+}
+@keyframes left-to-right{
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+
+    25% {transform: translate(-2px, -1px) rotate(-1deg);}
+
+    50% {transform: translate(3px, 1px) rotate(2deg);}
+
+    75%{transform: translate(-4px, -1px) rotate(-3deg);}
+
+    100% {transform: translate(5px, 1px) rotate(3deg)}
 }
 
 a{
@@ -56,7 +88,7 @@ a{
 }
 
 a{
-    background: linear-gradient(to right, #FCBA04, #FCBA04 50%, #841c26 50%);
+    background: linear-gradient(to right, #43895a, #43895a 50%, #841c26 50%);
 }
 
 a{
@@ -75,15 +107,7 @@ a {
   a:hover {
     background-position: 0 100%;
   }
-.oval1Text
-{
-    position: relative;
-    top: 160px;
-    left: 90px;
-    font-size: 25px;
-    color:#FCBA04;
-    
-}
+
 
 
 .oval2
@@ -93,17 +117,43 @@ a {
     left: 500px;
     width: 250px;
     height: 150px;
-    background: #841c26;
+    background: #9cc8fa;
     border-radius: 100px / 60px;
 }
 
 .oval2Text
 {
     position: relative;
-    top: 160px;
+    top: 60px;
     left: 80px;
     font-size: 25px;
-    color:#FCBA04;
+    color:#43895a;
+}
+
+.oval2Pic
+{
+    top:10px;
+    right:30px;
+    transition: 1.3s;
+
+}
+
+.oval2Pic:hover
+{
+    animation: left-to-right2 1.3s infinite;
+}
+
+@keyframes left-to-right2{
+
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+
+    25% {transform: translate(-2px, -1px) rotate(-1deg);}
+
+    50% {transform: translate(3px, 1px) rotate(2deg);}
+
+    75%{transform: translate(-4px, -1px) rotate(-3deg);}
+
+    100% {transform: translate(5px, 1px) rotate(3deg)}
 }
 
 .oval3
@@ -113,16 +163,41 @@ a {
     left: 870px;
     width: 250px;
     height: 150px;
-    background: #841c26;
+    background: #9cc8fa;
     border-radius: 100px / 60px;
     
 }
 .oval3Text
 {
     position: relative;
-    top: 160px;
+    top: 60px;
     left: 100px;
     font-size: 25px;
-    color:#FCBA04;
+    color:#43895a;
+}
 
+.oval3Pic
+{
+    top:10px;
+    right:15px;
+    transition: 1.3s;
+
+}
+
+.oval3Pic:hover
+{
+    animation: left-to-right2 1.3s infinite;
+}
+
+@keyframes left-to-right2{
+
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+
+    25% {transform: translate(-2px, -1px) rotate(-1deg);}
+
+    50% {transform: translate(3px, 1px) rotate(2deg);}
+
+    75%{transform: translate(-4px, -1px) rotate(-3deg);}
+
+    100% {transform: translate(5px, 1px) rotate(3deg)}
 }
