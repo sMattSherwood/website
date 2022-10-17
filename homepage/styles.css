@@ -20,8 +20,9 @@ body
 {
     font-family: cascadia code;
     font-size: 3.5ch;
-    text-align: center;
-   
+    flex-grow: 1;
+    padding-left: 12%;
+    padding-top: 5%;
     color: #9a9da4;
 
 }
@@ -29,28 +30,66 @@ body
 .text2
 {
     font-family: cascadia code;
-    text-align: center;
+    font-size: 7ch;
     color: #30a09a;
+    flex-grow: 1;
+    padding-left: 19%;
+    padding-top: 0%;
 }
 
 .text3
 {
     font-family: cascadia code;
+    font-size: 4ch;
     text-align: center;
     color: #17c791;
+    flex-grow: 1;
+    padding-right: 30%;
+    padding-top: 0%;
+}
+
+.upperBracket
+{
+    font-family: cascadia code;
+    font-size: 3.5ch;
+    text-align: center;
+    color: #a568d2;
+    flex-grow: 1;
+    padding-right: 70%;
+    padding-top: 0%;
+
 }
 
 .text4
 {
     font-family: cascadia code;
-    text-align: center;
     color: #e3b44d;
+    font-size: 3.5ch ;
+    flex-grow: 1;
+    padding-left: 17%;
+    padding-right: 40%;
+    padding-top: 0%;
+}
+
+.lowerBracket
+{
+    font-family: cascadia code;
+    font-size: 3.5ch;
+    text-align: center;
+    color: #a568d2;
+    flex-grow: 1;
+    padding-right: 70%;
+    padding-top: 0%;
+
 }
 
 .text5
 {
     font-family: cascadia code;
-    text-align: center;
+    flex-grow: 1;
+    font-size: 3.5ch;
+    padding-top: 0%;
+    padding-left: 12%;
     color: #91b74a;
 }
 
