@@ -1,1 +1,56 @@
+body
+{
+    background-color: #4b5368;
+}
+.sideBorder
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #393c44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text1
+{
+    font-family: cascadia code;
+    font-size: 3.5ch;
+    text-align: center;
+   
+    color: #9a9da4;
+
+}
+
+.text2
+{
+    font-family: cascadia code;
+    text-align: center;
+    color: #30a09a;
+}
+
+.text3
+{
+    font-family: cascadia code;
+    text-align: center;
+    color: #17c791;
+}
+
+.text4
+{
+    font-family: cascadia code;
+    text-align: center;
+    color: #e3b44d;
+}
+
+.text5
+{
+    font-family: cascadia code;
+    text-align: center;
+    color: #91b74a;
+}
 
