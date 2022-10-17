@@ -1,29 +1,39 @@
 body
 {
+    height: 100%;
+    margin: 0%;
     background-color: #4b5368;
+}
+
+.flexbox-container{
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+}
+.sidebar{
+    width:150px;
+    background-color: #393c44;
+    justify-content: center;
+
+}
+.content
+{
+    flex: 1 0 auto;
 }
 .sideBorder
 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
     background-color: #393c44;
-    display: flex;
-    flex-direction: column;
+    top: 0;
     align-items: center;
-    justify-content: space-between;
 }
 
 .text1
 {
     font-family: cascadia code;
     font-size: 3.5ch;
-    flex-grow: 1;
-    padding-left: 12%;
-    padding-top: 5%;
     color: #9a9da4;
+    bottom: 30px;
+
 
 }
 
@@ -32,32 +42,21 @@ body
     font-family: cascadia code;
     font-size: 7ch;
     color: #30a09a;
-    flex-grow: 1;
-    padding-left: 19%;
-    padding-top: 0%;
 }
 
 .text3
 {
     font-family: cascadia code;
     font-size: 4ch;
-    text-align: center;
     color: #17c791;
-    flex-grow: 1;
-    padding-right: 30%;
-    padding-top: 0%;
+
 }
 
 .upperBracket
 {
     font-family: cascadia code;
     font-size: 3.5ch;
-    text-align: center;
     color: #a568d2;
-    flex-grow: 1;
-    padding-right: 70%;
-    padding-top: 0%;
-
 }
 
 .text4
@@ -65,31 +64,20 @@ body
     font-family: cascadia code;
     color: #e3b44d;
     font-size: 3.5ch ;
-    flex-grow: 1;
-    padding-left: 17%;
-    padding-right: 40%;
-    padding-top: 0%;
 }
 
 .lowerBracket
 {
     font-family: cascadia code;
     font-size: 3.5ch;
-    text-align: center;
     color: #a568d2;
-    flex-grow: 1;
-    padding-right: 70%;
-    padding-top: 0%;
 
 }
 
 .text5
 {
     font-family: cascadia code;
-    flex-grow: 1;
     font-size: 3.5ch;
-    padding-top: 0%;
-    padding-left: 12%;
     color: #91b74a;
 }
 
