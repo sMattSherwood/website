@@ -5,6 +5,44 @@ body
     background-color: #4b5368;
 }
 
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows:1fr 0.08fr;
+    grid-template-areas:
+        "sidebar main main main"
+        "sidebar footer footer footer";
+}
+
+main{
+    background-color: #4b5368;
+    grid-area: main;
+}
+
+nav{
+    background-color: #393c44;
+    grid-area: sidebar;
+}
+
+footer{
+    background-color: #393c44;
+    grid-area: footer;
+}
+
+@media only screen and (max-width:550x){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "nav"
+            "main"
+            "footer";
+    }
+}
+
+/*
+
 .flexbox-container{
     display: flex;
     height: 100vh;
@@ -19,6 +57,7 @@ body
 .content
 {
     flex: 1 0 auto;
+     
 }
 .sideBorder
 {
@@ -27,16 +66,28 @@ body
     align-items: center;
 }
 
+.flexText1
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .text1
 {
     font-family: cascadia code;
     font-size: 3.5ch;
     color: #9a9da4;
     bottom: 30px;
+    right: 10%;
 
 
 }
 
+.flextText2
+{
+    display: block;
+
+}
 .text2
 {
     font-family: cascadia code;
@@ -44,14 +95,22 @@ body
     color: #30a09a;
 }
 
+.flexText3
+{
+    display: flex;
+    flex-direction: column;
+}
 .text3
 {
     font-family: cascadia code;
     font-size: 4ch;
     color: #17c791;
-
 }
 
+.flexUperBracket
+{
+    display: flex;
+}
 .upperBracket
 {
     font-family: cascadia code;
@@ -59,13 +118,22 @@ body
     color: #a568d2;
 }
 
+.flexText4
+{
+    display: flex;
+}
 .text4
 {
     font-family: cascadia code;
     color: #e3b44d;
     font-size: 3.5ch ;
+    
 }
 
+.flexLowerBracket
+{
+    display: flex;
+}
 .lowerBracket
 {
     font-family: cascadia code;
@@ -74,10 +142,16 @@ body
 
 }
 
+.flextText5
+{
+    display: flex;
+}
 .text5
 {
     font-family: cascadia code;
     font-size: 3.5ch;
     color: #91b74a;
 }
+
+*/
 
