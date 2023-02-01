@@ -8,16 +8,37 @@ body
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows:1fr 0.08fr;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows:1fr 1fr 0.1fr;
     grid-template-areas:
-        "sidebar main main main"
-        "sidebar footer footer footer";
+        "sidebar content1 content2"
+        "sidebar content3 content4"
+        "sidebar footer footer";
 }
 
 main{
     background-color: #4b5368;
     grid-area: main;
+}
+
+.content1{
+    grid-area: content1;
+}
+
+.content2{
+    grid-area: content2;
+}
+
+.content3{
+    grid-area: content3;
+}
+
+.content4{
+    grid-area: content4;
+}
+
+.content5{
+    grid-area: content5;
 }
 
 nav{
@@ -30,6 +51,7 @@ footer{
     grid-area: footer;
 }
 
+/* this will allow the css grids work for the side nav bar display page icons in a row*/
 nav ul{
     display: grid;
     grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
@@ -47,15 +69,17 @@ nav ul li a{
     
 }
 
+/*when a user is using thier phone these will be the dimentions*/
 @media only screen and (max-width:550x){
     .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
             "nav"
             "main"
             "footer";
     }
+
+    
 }
 
 /*
