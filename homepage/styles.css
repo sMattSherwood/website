@@ -8,12 +8,13 @@ body
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows:1fr 1fr 0.1fr;
+    grid-template-columns: 0.3fr 2fr 1fr;
+    grid-template-rows:3fr 1fr 0.2fr;
     grid-template-areas:
         "sidebar content1 content2"
         "sidebar content3 content4"
         "sidebar footer footer";
+        
 }
 
 main{
@@ -47,7 +48,7 @@ nav{
 }
 
 footer{
-    background-color: #393c44;
+    background-color: #444851;
     grid-area: footer;
 }
 
@@ -69,6 +70,57 @@ nav ul li a{
     
 }
 
+.text1
+{
+    font-family: cascadia code;
+    font-size: 3.5ch;
+    color: #9a9da4;
+    padding-left: 5%
+}
+.text2
+{
+    font-family: cascadia code;
+    font-size: 7ch;
+    color: #30a09a;
+    padding-left: 3%
+}
+.text3
+{
+    font-family: cascadia code;
+    font-size: 4ch;
+    color: #17c791;
+    padding-left: 5%;
+}
+.text4
+{
+    font-family: cascadia code;
+    font-size: 3.5ch;
+    color: #a568d2;
+    padding-left: 1%;
+}
+.text5
+{
+    font-family: cascadia code;
+    color: #e3b44d;
+    font-size: 3.5ch ;
+    padding-left: 5%;
+    
+}
+.text6
+{
+    font-family: cascadia code;
+    font-size: 3.5ch;
+    color: #a568d2;
+    padding-left: 1%;
+
+}
+.text7
+{
+    font-family: cascadia code;
+    font-size: 3.5ch;
+    color: #91b74a;
+}
+
 /*when a user is using thier phone these will be the dimentions*/
 @media only screen and (max-width:550x){
     .container{
@@ -78,9 +130,9 @@ nav ul li a{
             "main"
             "footer";
     }
-
-    
 }
+
+
 
 /*
 
@@ -152,7 +204,7 @@ nav ul li a{
 {
     display: flex;
 }
-.upperBracket
+.text4
 {
     font-family: cascadia code;
     font-size: 3.5ch;
@@ -163,7 +215,7 @@ nav ul li a{
 {
     display: flex;
 }
-.text4
+.text5
 {
     font-family: cascadia code;
     color: #e3b44d;
@@ -175,7 +227,7 @@ nav ul li a{
 {
     display: flex;
 }
-.lowerBracket
+.text6
 {
     font-family: cascadia code;
     font-size: 3.5ch;
@@ -187,7 +239,7 @@ nav ul li a{
 {
     display: flex;
 }
-.text5
+.text7
 {
     font-family: cascadia code;
     font-size: 3.5ch;
