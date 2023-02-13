@@ -8,12 +8,11 @@ body
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: 0.3fr 2fr 1fr;
-    grid-template-rows:3fr 1fr 0.2fr;
+    grid-template-columns: 0.2fr 2fr;
+    grid-template-rows:2fr 0.2fr;
     grid-template-areas:
-        "sidebar content1 content2"
-        "sidebar content3 content4"
-        "sidebar footer footer";
+        "sidebar content1"
+        "sidebar footer";
         
 }
 
@@ -24,6 +23,7 @@ main{
 
 .content1{
     grid-area: content1;
+    row-gap: 5%;
 }
 
 .content2{
@@ -59,10 +59,8 @@ nav ul{
     justify-content: center;
     justify-items: center;
     list-style-type: none;
-}
 
-nav ul li{
-
+   
 }
 
 nav ul li a{
@@ -122,7 +120,7 @@ nav ul li a{
 }
 
 /*when a user is using thier phone these will be the dimentions*/
-@media only screen and (max-width:550x){
+@media only screen and (max-width:550px){
     .container{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
@@ -132,119 +130,20 @@ nav ul li a{
     }
 }
 
-
-
-/*
-
-.flexbox-container{
-    display: flex;
+@media only screen and (max-width:1800px){
+    .container{
+        display: grid;
     height: 100vh;
-    justify-content: flex-start;
-}
-.sidebar{
-    width:150px;
-    background-color: #393c44;
-    justify-content: center;
+    grid-template-columns: 0.2fr 2fr;
+    grid-template-rows:2fr 0.2fr;
+    grid-template-areas:
+        "sidebar content1"
+        "sidebar footer";
+    row-gap: 10%;
 
-}
-.content
-{
-    flex: 1 0 auto;
-     
-}
-.sideBorder
-{
-    background-color: #393c44;
-    top: 0;
-    align-items: center;
+    }
 }
 
-.flexText1
-{
-    display: flex;
-    flex-direction: row;
-}
-
-.text1
-{
-    font-family: cascadia code;
-    font-size: 3.5ch;
-    color: #9a9da4;
-    bottom: 30px;
-    right: 10%;
 
 
-}
-
-.flextText2
-{
-    display: block;
-
-}
-.text2
-{
-    font-family: cascadia code;
-    font-size: 7ch;
-    color: #30a09a;
-}
-
-.flexText3
-{
-    display: flex;
-    flex-direction: column;
-}
-.text3
-{
-    font-family: cascadia code;
-    font-size: 4ch;
-    color: #17c791;
-}
-
-.flexUperBracket
-{
-    display: flex;
-}
-.text4
-{
-    font-family: cascadia code;
-    font-size: 3.5ch;
-    color: #a568d2;
-}
-
-.flexText4
-{
-    display: flex;
-}
-.text5
-{
-    font-family: cascadia code;
-    color: #e3b44d;
-    font-size: 3.5ch ;
-    
-}
-
-.flexLowerBracket
-{
-    display: flex;
-}
-.text6
-{
-    font-family: cascadia code;
-    font-size: 3.5ch;
-    color: #a568d2;
-
-}
-
-.flextText5
-{
-    display: flex;
-}
-.text7
-{
-    font-family: cascadia code;
-    font-size: 3.5ch;
-    color: #91b74a;
-}
-
-*/
 
