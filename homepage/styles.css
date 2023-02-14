@@ -26,22 +26,6 @@ main{
     row-gap: 5%;
 }
 
-.content2{
-    grid-area: content2;
-}
-
-.content3{
-    grid-area: content3;
-}
-
-.content4{
-    grid-area: content4;
-}
-
-.content5{
-    grid-area: content5;
-}
-
 nav{
     background-color: #393c44;
     grid-area: sidebar;
@@ -49,7 +33,14 @@ nav{
 
 footer{
     background-color: #444851;
+
     grid-area: footer;
+}
+
+footer a{
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    justify-items: center;
 }
 
 /* this will allow the css grids work for the side nav bar display page icons in a row*/
@@ -115,6 +106,7 @@ nav ul li a{
     font-family: cascadia code;
     font-size: 3.5ch;
     color: #91b74a;
+    padding-left: 1%;
 }
 
 /*when a user is using thier phone these will be the dimentions*/
