@@ -1,3 +1,14 @@
+form ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 40%;
+    padding-top: 5%;
+
+}
+
+
 .message{
     height: 300px;
     width: 300px;
