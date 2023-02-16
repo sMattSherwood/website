@@ -37,11 +37,14 @@ footer{
     grid-area: footer;
 }
 
-footer a{
+footer ul{
     display: grid;
-    grid-template-columns: (3, 1fr);
-    justify-items: center;
+    grid-template-columns: repeat (3, 1fr);
+    justify-content: center;
+    list-style-type: none; /*this will make the list dot disapear*/
+
 }
+
 
 /* this will allow the css grids work for the side nav bar display page icons in a row*/
 nav ul{
