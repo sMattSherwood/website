@@ -8,8 +8,21 @@ form ul{
 
 }
 
-
 .message{
     height: 300px;
     width: 300px;
+}
+
+
+@media only screen and (max-width:550px){
+    form ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        list-style-type: none;
+        padding-left: 0%;
+        padding-top: 0%;
+    
+    }
+
 }

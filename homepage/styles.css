@@ -33,18 +33,32 @@ nav{
 
 footer{
     background-color: #444851;
-
     grid-area: footer;
 }
 
 footer ul{
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    justify-content: center;
+    grid-template-rows: repeat (3, 1fr);
+/*   justify-content: end; */ 
+    grid-template-areas: "footer2 footer3 footer1";
     list-style-type: none; /*this will make the list dot disapear*/
 
 }
 
+.footer1{
+    grid-area: footer1;
+    padding-left: 50%;
+    
+    
+}
+.footer2{
+    grid-area: footer2;
+    padding-top:6%;
+}
+.footer3{
+    grid-area: footer3;
+    padding-top: 11%;
+}
 
 /* this will allow the css grids work for the side nav bar display page icons in a row*/
 nav ul{
