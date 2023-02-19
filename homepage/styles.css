@@ -48,16 +48,23 @@ footer ul{
 .footer1{
     grid-area: footer1;
     padding-left: 50%;
-    
-    
+}
+.date{
+    color: #d3d3d3;
+    font-family: calling code;
+    padding-bottom:10%;
 }
 .footer2{
     grid-area: footer2;
     padding-top:6%;
+    font-family: calling code;
+    color: #d3d3d3
 }
 .footer3{
     grid-area: footer3;
-    padding-top: 11%;
+    padding-top: 14%;
+    font-family: calling code;
+    color: #d3d3d3;
 }
 
 /* this will allow the css grids work for the side nav bar display page icons in a row*/
