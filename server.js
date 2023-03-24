@@ -1,16 +1,42 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const bodyParser = require('body-parser')
+const nodeMailer = require('nodemailer')
 
-const PORT = process.env.PORT || 5000;
+const app = express()
 
-// this will talk to the html and css in contact info
-app.use(express.static('public'));
+app.use(bodyParser.urlencoded({extended: false }))
+app.use(bodyParser.json())
 
+app.post('send-email', (req, res) => {
+    const {name, email, message} = req.body
 
-app.get('/', (req, res)=>{
-    res.sendFile(__dirname + '/public/contactInfo/contact.html')
-});
+    const transporter = nodeMailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'msherwood.matt@gmail.com',
+            pass: 'Bettasigma101o!'
+        }
+    })
 
-app.listen(PORT, ()=>{
-    console.log(`Server on running on port ${PORT}`)
-});
+    const mailOptions = {
+        from: email,
+        to: 'recipient-email@example.com',
+        subject: 'New Content Form Submission',
+        html: '<p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>'
+    }
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if(error) {
+            console.log(error)
+            res.send('Error: somthing went wrong')
+        }
+        else {
+            console.log('Email sent' + info.response)
+            res.send('Message sent successfully')
+        }
+    })
+})
+
+app.listen(3000, () => {
+    console.log('server started on port 3000')
+})

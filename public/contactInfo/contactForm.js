@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () =>{   
     const contactForm = document.querySelector('.contact-form')
 
     let name = document.getElementById("name")
@@ -16,7 +15,20 @@ document.addEventListener('DOMContentLoaded', () =>{
             message: message.value
         }
 
-        console.log(formData)
+        let xhr = new XMLHttpRequest()
+        xhr.open('POST', '/')
+        xhr.setRequestHeader('content-type', 'application/json')
+        xhr.onload = function(){
+            console.log(xhr.responseText)
+            if(xhr.responseText == 'success'){
+                alert('email sent')
+                name.value = ''
+                email.value = ''
+                subject.value = ''
+                message.value = ''
+            }
+            else
+                alert('Somthing went wrong')
+        }
+        xhr.send(JSON.stringify(formData))
     })
-
-}) 

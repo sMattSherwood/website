@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../homepage/styles.css">
     <link rel="stylesheet" href="contact.css">
-    <script src="contactForm.js"></script>
-    <script src="contactForm.js"></script>
     <script src="../homepage/functionality.js"></script>
     <title>Document</title>
 </head>
@@ -47,30 +45,21 @@
 
         <!--begining of the form-->
         <div class="form-container">
-            <form class="contact-form">
-                <ul>
-                    <li>
-                        <label>Contact me</label>
-                    </li>
-                    <li>
-                        <input type="text" class="nameFeild" id="name" value="Matthew sherwood">
-                    </li>
-                    <li>
-                        <input type="text" class="emailFeild" id="email" value="example@gmail.com">
-                    </li>
-                    <li>
-                        <input type="text" class="subjectFeild" id="subject" value="I have some questons">
-                    </li>
-                    <li>
-                        <textarea name="message" class="textAreaFeild" id="message" cols="30" rows="10">Message</textarea>
-                    </li>
-                    <li>
-                        <input type="submit">
-                    </li>
-                </ul>
-            </form>
+            <form action="http://localhost:3000/send-email" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              
+                <button type="submit">Send Message</button>
+              </form>
         </div>
-
+        <script src="http://localhost:8080/server.js"></script>
+       <!-- <script src="contactForm.js"></script> -->
 
         <!--end of form-->
 
