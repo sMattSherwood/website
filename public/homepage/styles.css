@@ -26,6 +26,8 @@ main{
     row-gap: 5%;
 }
 
+
+
 nav{
     background-color: #393c44;
     grid-area: sidebar;
@@ -86,20 +88,57 @@ nav ul li a{
     font-family: cascadia code;
     font-size: 3.5ch;
     color: #9a9da4;
+
+    /*typing animation code*/
+    overflow: hidden;
+    border-right: 3px solid whitesmoke;
+    animation: 
+        caret 0.7s step-end infinite, /*Animation for the blinking cursor object*/
+        typist 5s steps(16); /*Animation durration for typing*/
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+
     padding-left: 5%
+    
+    
 }
 .text2
 {
     font-family: cascadia code;
-    font-size: 7ch;
+    font-size: 5.8ch;
     color: #30a09a;
+    /*typing animation*/
+    visibility: hidden;
+    overflow: hidden;
+    border-right: 3px solid whitesmoke;
+    animation: 
+        invisible 6s,
+        caret 0.7s step-end infinite,
+        typist 6s steps(16);
+        animation-delay: 2s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+
     padding-left: 3%
+    
 }
 .text3
 {
     font-family: cascadia code;
     font-size: 4ch;
     color: #17c791;
+   
+    /*Typing animation*/
+    visibility: hidden;
+    overflow: hidden;
+    border-right: 3px solid whitesmoke;
+    animation: 
+        invisible 6s,
+        caret 0.7s step-end infinite,
+        typist2 11s steps(44);
+        animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
     padding-left: 5%;
 }
 .text4
@@ -107,30 +146,189 @@ nav ul li a{
     font-family: cascadia code;
     font-size: 3.5ch;
     color: #a568d2;
+    /*Typing animation*/
+    visibility: hidden;
+    overflow: hidden;
+    border-right: 3px solid whitesmoke;
+    animation: 
+        invisible 6s,
+        caret 0.35s step-end infinite,
+        typist3 0.5s steps(1);
+        animation-delay: 8.3s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
     padding-left: 1%;
 }
 .text5
 {
     font-family: cascadia code;
     color: #e3b44d;
-    font-size: 3.5ch ;
+    font-size: 2.5ch ;
+    /*Typing Animation*/
+    visibility: hidden;
+    overflow: hidden;
+    border-right: 3px solid whitesmoke;
+    animation: 
+        invisible 6s,
+        caret 0.7s step-end infinite,
+        typist4 11s steps(52);
+        animation-delay: 8.7s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+
+    padding-left: 5%;
+    
+}
+.text5-1
+{
+    font-family: cascadia code;
+    color: #e3b44d;
+    font-size: 2.5ch ;
+    /*Typing Animation*/
+    visibility: hidden;
+    overflow: hidden;
+    border-right: 3px solid whitesmoke;
+    animation: 
+        invisible 6s,
+        caret 0.7s step-end infinite,
+        typist5 11s steps(52);
+        animation-delay: 12.2s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+
+    padding-left: 5%;
+    
+}
+.text5-2
+{
+    font-family: cascadia code;
+    color: #e3b44d;
+    font-size: 2.5ch ;
+    /*Typing Animation*/
+    visibility: hidden;
+    overflow: hidden;
+    border-right: 3px solid whitesmoke;
+    animation: 
+        invisible 6s,
+        caret 0.7s step-end infinite,
+        typist6 11s steps(52);
+        animation-delay: 15.5s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+
+    padding-left: 5%;
+    
+}
+.text5-3
+{
+    font-family: cascadia code;
+    color: #e3b44d;
+    font-size: 2.5ch ;
+    /*Typing Animation*/
+    visibility: hidden;
+    overflow: hidden;
+    border-right: 3px solid whitesmoke;
+    animation: 
+        invisible 6s,
+        caret 0.7s step-end infinite,
+        typist7 11s steps(66);
+        animation-delay: 19s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+
     padding-left: 5%;
     
 }
 .text6
 {
     font-family: cascadia code;
-    font-size: 3.5ch;
+    font-size: 2.5ch;
     color: #a568d2;
+    /*Typing Animation*/
+    visibility: hidden;
+    overflow: hidden;
+    border-right: 3px solid whitesmoke;
+    animation: 
+        invisible 6s,
+        caret 0.35s step-end infinite,
+        typist3 0.5s steps(1);
+        animation-delay: 22.5s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+    padding-left: 1%;
     padding-left: 1%;
 
 }
 .text7
 {
     font-family: cascadia code;
-    font-size: 3.5ch;
+    font-size: 2.5ch;
     color: #91b74a;
+    /*Typing Animation*/
+    visibility: hidden;
+    overflow: hidden;
+    border-right: 3px solid whitesmoke;
+    animation: 
+        invisible 6s,
+        caret 0.7s step-end infinite,
+        typist2 11s steps(44);
+        animation-delay: 23s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
     padding-left: 1%;
+}
+
+@keyframes caret {
+    0%, 100%{border-color: transparent;}
+    50%{border-color: whitesmoke;}
+}
+
+@keyframes typist {
+    0%{width:0ch;}
+    30%{width:16ch;}
+    80%{width:16ch;}
+    100%{border-right: none;}
+}
+
+@keyframes typist2 {
+    0%{width:0ch;}
+    30%{width:44ch}
+    80%{width:44ch}
+    100%{border-right: none;}
+}
+@keyframes typist3 {
+    0%{width:0ch;}
+    30%{width:1ch}
+    80%{width:1ch}
+    100%{border-right: none;}
+}
+@keyframes typist4 {
+    0%{width:0ch;}
+    30%{width:52ch}
+    80%{width:52ch}
+    100%{border-right: none;}
+}
+@keyframes typist5 {
+    0%{width:0ch;}
+    30%{width:66ch}
+    80%{width:66ch}
+    100%{border-right: none;}
+}
+@keyframes typist6 {
+    0%{width:0ch;}
+    30%{width:47ch}
+    80%{width:47ch}
+    100%{border-right: none;}
+}
+@keyframes typist7 {
+    0%{width:0ch;}
+    30%{width:37ch}
+    80%{width:37ch}
+    100%{border-right: none;}
+}
+
+@keyframes invisible {
+    0%, 100%{visibility: visible;}
 }
 
 /*when a user is using thier phone these will be the dimentions*/
