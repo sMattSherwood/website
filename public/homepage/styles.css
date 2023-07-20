@@ -242,7 +242,7 @@ nav ul li a{
 .text6
 {
     font-family: cascadia code;
-    font-size: 2.5ch;
+    font-size: 3.5ch;
     color: #a568d2;
     /*Typing Animation*/
     visibility: hidden;
@@ -342,7 +342,7 @@ nav ul li a{
     }
 }
 
-@media only screen and (min-width:1920px){
+@media only screen and (max-width:1920px){
     nav ul{
         display: grid;
         grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
@@ -367,6 +367,22 @@ nav ul li a{
         padding-left: 1%;
         padding-bottom: 6%;
     }
+}
+
+@media screen and (max-width: 1280) {
+
+}
+
+@media (min-resolution: 1.5dppx) {
+    /* this squches the buttons for the webpages togeather so the screen at the bottom dosn't look weird*/
+    nav ul{
+        display: grid;
+        grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
+        justify-content: center;
+        justify-items: center;
+        list-style-type: none;
+        row-gap: 7%;
+    } 
 }
 
 

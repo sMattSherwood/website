@@ -1,0 +1,147 @@
+body
+{
+    height: 100%;
+    margin: 0%;
+    background-color: #4b5368;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.2fr 2fr;
+    grid-template-rows:2fr 0.2fr;
+    grid-template-areas:
+        "sidebar content1"
+        "sidebar footer";      
+}
+
+main{
+    background-color: #4b5368;
+    grid-area: main;
+}
+
+.content1{
+    grid-area: content1;
+    row-gap: 5%;
+}
+
+nav{
+    background-color: #393c44;
+    grid-area: sidebar;
+}
+
+footer{
+    background-color: #444851;
+    grid-area: footer;
+}
+
+footer ul{
+    display: grid;
+    grid-template-rows: repeat (3, 1fr);
+/*   justify-content: end; */ 
+    grid-template-areas: "footer2 footer3 footer1";
+    list-style-type: none; /*this will make the list dot disapear*/
+}
+
+.footer1{
+    grid-area: footer1;
+    padding-left: 50%;
+}
+.date{
+    color: #d3d3d3;
+    font-family: calling code;
+    padding-bottom:10%;
+}
+.footer2{
+    grid-area: footer2;
+    padding-top:6%;
+    font-family: calling code;
+    color: #d3d3d3
+}
+.footer3{
+    grid-area: footer3;
+    padding-top: 14%;
+    font-family: calling code;
+    color: #d3d3d3;
+}
+
+/* this will allow the css grids work for the side nav bar display page icons in a row*/
+nav ul{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
+    justify-content: center;
+    justify-items: center;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration:none;
+}
+
+.personalInfo{
+    display: grid;
+    grid-template-columns: 1fr, 1fr ;
+    grid-template-rows: 1fr, 1fr ;
+    grid-template-areas: "picture aboutMe"
+                         "name aboutMe";
+}
+
+
+.aboutMe{
+
+    grid-area: aboutMe;
+}
+
+.name{
+    grid-area: name;
+}
+
+.profilePicture{
+    grid-area: picture;
+    height: 200px;
+    width: 200px;
+}
+
+
+
+/*when a user is using thier phone these will be the dimentions*/
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "nav"
+            "main"
+            "footer";
+    }
+}
+
+@media only screen and (min-width:1920px){
+    nav ul{
+        display: grid;
+        grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
+        justify-content: center;
+        justify-items: center;
+        list-style-type: none;
+        row-gap: 13%;
+    }
+    .text3
+    {
+        font-family: cascadia code;
+        font-size: 4ch;
+        color: #17c791;
+        padding-left: 5%;
+        padding-bottom: 2%;
+    }
+    .text6
+    {
+        font-family: cascadia code;
+        font-size: 3.5ch;
+        color: #a568d2;
+        padding-left: 1%;
+        padding-bottom: 6%;
+    }
+}
+
+@media (min-resolution: 144dpi) {
+    
+}
