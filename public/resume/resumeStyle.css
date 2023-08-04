@@ -12,7 +12,8 @@ body
     grid-template-rows:2fr 0.2fr;
     grid-template-areas:
         "sidebar content1"
-        "sidebar footer";      
+        "sidebar footer";
+        
 }
 
 main{
@@ -24,6 +25,8 @@ main{
     grid-area: content1;
     row-gap: 5%;
 }
+
+
 
 nav{
     background-color: #393c44;
@@ -41,6 +44,7 @@ footer ul{
 /*   justify-content: end; */ 
     grid-template-areas: "footer2 footer3 footer1";
     list-style-type: none; /*this will make the list dot disapear*/
+
 }
 
 .footer1{
@@ -74,59 +78,42 @@ nav ul{
     list-style-type: none;
 }
 
+
+
 nav ul li a{
     text-decoration:none;
+    
 }
-
-.personalInfo{
+.resumeInfo{
     display: grid;
-    grid-template-columns: 1fr, 1fr ;
-    grid-template-rows: 1fr, 1fr ;
-    grid-template-areas: "picture aboutMe"
-                         "name aboutMe";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "resumeLabel"
+                        "linkToResume";
+}
+.reusmeLabel{
+    
+    grid-area: resumeLabel;
+    font-size: 5ch;
+    
+}
+.linkToResume{
+    grid-area: linkToResume;
+    font-size: 5ch;
+
 }
 
 
-.aboutMe{
-
-    grid-area: aboutMe;
-    text-align: center;
-    top: 50%;
-}
-
-.name{
-    grid-area: name;
-}
-
-.profilePicture{
-    grid-area: picture;
-    height: auto;
-    width: 100%;
-}
-
-
-
-/*when a user is using thier phone these will be the dimentions*/
-@media only screen and (max-width:550px){
-    .container{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-            "nav"
-            "main"
-            "footer";
-    }
-}
-
-@media only screen and (min-width:1920px){
+@media screen and (max-width: 1280) {
     nav ul{
         display: grid;
         grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
         justify-content: center;
         justify-items: center;
         list-style-type: none;
-        row-gap: 13%;
-    }
-    
+        row-gap: 15%;
+    } 
+
 }
 
 @media (min-resolution: 1.5dppx) {
@@ -139,11 +126,19 @@ nav ul li a{
         list-style-type: none;
         row-gap: 7%;
     } 
-    .profilePicture{
-        grid-area: picture;
-        height: auto;
-        width: 100%;
+    .reusmeLabel{
+        grid-area: resumeLabel;
+        font-size: 5ch;
+        margin-left: 10%;
+        margin-top: 10%;
+        
     }
-
-    
+    .linkToResume{
+    grid-area: linkToResume;
+    font-size: 5ch;
+    margin-left: 30%;
+    padding-top: 10%;
+   
+    margin-bottom: 30%;
+    }
 }
