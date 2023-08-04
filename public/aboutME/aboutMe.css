@@ -90,6 +90,8 @@ nav ul li a{
 .aboutMe{
 
     grid-area: aboutMe;
+    text-align: center;
+    top: 50%;
 }
 
 .name{
@@ -98,8 +100,8 @@ nav ul li a{
 
 .profilePicture{
     grid-area: picture;
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: 100%;
 }
 
 
@@ -124,24 +126,23 @@ nav ul li a{
         list-style-type: none;
         row-gap: 13%;
     }
-    .text3
-    {
-        font-family: cascadia code;
-        font-size: 4ch;
-        color: #17c791;
-        padding-left: 5%;
-        padding-bottom: 2%;
-    }
-    .text6
-    {
-        font-family: cascadia code;
-        font-size: 3.5ch;
-        color: #a568d2;
-        padding-left: 1%;
-        padding-bottom: 6%;
-    }
+    
 }
 
-@media (min-resolution: 144dpi) {
-    
+@media (min-resolution: 1.5dppx) {
+    /* this squches the buttons for the webpages togeather so the screen at the bottom dosn't look weird*/
+    nav ul{
+        display: grid;
+        grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
+        justify-content: center;
+        justify-items: center;
+        list-style-type: none;
+        row-gap: 7%;
+    } 
+
+    .profilePicture{
+        grid-area: picture;
+        height: auto;
+        width: 100%;
+    }
 }

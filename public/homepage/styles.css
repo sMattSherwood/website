@@ -78,6 +78,11 @@ nav ul{
     list-style-type: none;
 }
 
+.homepage, .aboutMe, .resume, .futureProjects, .hithub {
+    width: auto;
+    height: auto;
+}
+
 nav ul li a{
     text-decoration:none;
     
