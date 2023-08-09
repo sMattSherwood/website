@@ -7,8 +7,9 @@ body
 
 .container{
     display: grid;
+    
     grid-template-columns: 0.2fr 2fr;
-    grid-template-rows:2fr 0.2fr;
+    grid-template-rows:    2fr 0.2fr;
     grid-template-areas:
         "sidebar content1"
         "sidebar footer";
@@ -22,13 +23,44 @@ main{
 
 .content1{
     grid-area: content1;
-    row-gap: 5%;
+    display: grid;
+    margin-top: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "personalWebsite drawingApp studentWebService";
+    column-gap: 5%;
+    
+}
+.drawingApp{
+    grid-area: drawingApp;
+    margin-top: 60%;
+
+    display: flex;
+    order: 3;
+    flex-direction: column;
+    justify-content: start;
+}
+.drawFlex1{
+    display : flex;
+    padding-left: 10%;
 }
 
+.personalWebsite{
+    grid-area: personalWebsite;
+    display: flex;
+    order: 3;
+    flex-direction: column;
+}
+.studentWebService{
+    grid-area: studentWebService;
+    display: flex;
+    order: 3;
+    flex-direction: column;
+}
 
 
 nav{
     background-color: #393c44;
+    width: 100%;
     grid-area: sidebar;
 }
 
@@ -83,27 +115,9 @@ nav ul li a{
     text-decoration:none;
     
 }
-.resumeInfo{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "resumeLabel"
-                        "linkToResume";
-}
-.reusmeLabel{
-    
-    grid-area: resumeLabel;
-    font-size: 5ch;
-    
-}
-.linkToResume{
-    grid-area: linkToResume;
-    font-size: 5ch;
 
-}
+@media screen and (max-width:1920px) {
 
-
-@media screen and (max-width: 1920px) {
     nav ul{
         display: grid;
         grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
@@ -112,17 +126,20 @@ nav ul li a{
         list-style-type: none;
         row-gap: 15%;
     } 
+
     .container{
         display: grid;
         height: 100vh;
         grid-template-columns: 0.2fr 2fr;
-        grid-template-rows:2fr 0.2fr;
+        grid-template-rows:    2fr 0.2fr;
         grid-template-areas:
             "sidebar content1"
-            "sidebar footer";      
+            "sidebar footer";
+            
     }
 
 }
+
 
 @media (min-resolution: 1.5dppx) {
     /* this squches the buttons for the webpages togeather so the screen at the bottom dosn't look weird*/
@@ -132,21 +149,6 @@ nav ul li a{
         justify-content: center;
         justify-items: center;
         list-style-type: none;
-        row-gap: 7%;
+        row-gap: 0%;
     } 
-    .reusmeLabel{
-        grid-area: resumeLabel;
-        font-size: 5ch;
-        margin-left: 10%;
-        margin-top: 10%;
-        
-    }
-    .linkToResume{
-    grid-area: linkToResume;
-    font-size: 5ch;
-    margin-left: 30%;
-    padding-top: 10%;
-   
-    margin-bottom: 30%;
-    }
 }
