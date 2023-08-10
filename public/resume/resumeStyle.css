@@ -102,6 +102,18 @@ nav ul li a{
 
 }
 
+@keyframes caret {
+    0%, 100%{border-color: transparent;}
+    50%{border-color: whitesmoke;}
+}
+
+@keyframes typist {
+    0%{width:0ch;}
+    30%{width:16ch;}
+    80%{width:16ch;}
+    100%{border-right: none;}
+}
+
 
 @media screen and (max-width: 1920px) {
     nav ul{
