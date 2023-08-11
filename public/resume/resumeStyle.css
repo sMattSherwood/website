@@ -22,7 +22,34 @@ main{
 
 .content1{
     grid-area: content1;
-    row-gap: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "resumeDownload resumeInBrowser";
+    
+}
+
+.resumeDownload{
+    grid-area: resumeDownload;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 10px solid black;
+
+}
+.resumeDownload h1{
+    color: blue;
+}
+
+.resumeInBrowser{
+    grid-area: resumeInBrowser;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resumeInBrowser h1{
+    color: blue;
 }
 
 
@@ -30,6 +57,7 @@ main{
 nav{
     background-color: #393c44;
     grid-area: sidebar;
+    
 }
 
 footer{
@@ -83,24 +111,6 @@ nav ul li a{
     text-decoration:none;
     
 }
-.resumeInfo{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "resumeLabel"
-                        "linkToResume";
-}
-.reusmeLabel{
-    
-    grid-area: resumeLabel;
-    font-size: 5ch;
-    
-}
-.linkToResume{
-    grid-area: linkToResume;
-    font-size: 5ch;
-
-}
 
 @keyframes caret {
     0%, 100%{border-color: transparent;}
@@ -144,21 +154,25 @@ nav ul li a{
         justify-content: center;
         justify-items: center;
         list-style-type: none;
-        row-gap: 7%;
+        row-gap: 0%; 
     } 
-    .reusmeLabel{
-        grid-area: resumeLabel;
-        font-size: 5ch;
-        margin-left: 10%;
-        margin-top: 10%;
+    .container{
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 0.2fr 2fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "sidebar content1"
+            "auto footer";      
+    }
+
+    .content1 {
+        grid-area: content1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "resumeDownload resumeInBrowser";
         
     }
-    .linkToResume{
-    grid-area: linkToResume;
-    font-size: 5ch;
-    margin-left: 30%;
-    padding-top: 10%;
-   
-    margin-bottom: 30%;
-    }
+
+
 }
