@@ -57,6 +57,7 @@ main{
     font-size: 3ch;
     font-family: cascadia code;
     overflow: hidden;
+    border-right: 3px solid whitesmoke;
     animation: 
         invisible 1s,
         caret 0.7s step-end infinite, /*Animation for the blinking cursor object*/
@@ -67,8 +68,16 @@ main{
 .personalWebsite iframe{
     height: 300px;
     width: 300px;
+    animation: fadeIn 2s ease-in;
 }
 /*Drawing app*/
+.drawingApp{
+    grid-area: drawingApp;
+    display: flex;
+    order: 3;
+    flex-direction: column;
+
+}
 .drawingApp h1{
     color:#e3b44d;
     padding-left: 0%;
@@ -89,21 +98,29 @@ main{
     color: #d3d3d3;
     font-size: 3ch;
     font-family: cascadia code;
-    overflow : hidden;
+    overflow: hidden;
     visibility: hidden;
-    padding-left: 5%;
+    border-right: 3px solid whitesmoke;
     animation: 
-        invisible 1s,
+        invisible 3s,
         caret 0.7s step-end infinite, /*Animation for the blinking cursor object*/
-        typist4 4s steps(8); /*Animation durration for typing*/
+        typist2 4s steps(19); /*Animation durration for typing*/
         animation-delay: 1.4s;
     animation-fill-mode: forwards;
     white-space: nowrap;
+    
 }
 
 .drawingApp iframe{
     height: 300px;
     width: 300px;
+    visibility: hidden;
+    animation: 
+        invisible 1s,
+        fadeIn 2s ease-in;
+        animation-delay: 1.4s;
+        animation-fill-mode: forwards; /*This will make the hidden attribute visible at and of animation*/
+    
 }
 
 /*Student Web Services*/
@@ -135,8 +152,9 @@ main{
     font-family: cascadia code;
     overflow: hidden;
     visibility: hidden;
+    border-right: 3px solid whitesmoke;
     animation: 
-        invisible 1s,
+        invisible 3s,
         caret 0.7s step-end infinite, /*Animation for the blinking cursor object*/
         typist3 4s steps(12); /*Animation durration for typing*/
         animation-delay: 3s;
@@ -147,6 +165,12 @@ main{
 .studentWebService iframe{
     height: 300px;
     width: 300px;
+    visibility: hidden;
+    animation: 
+        invisible 1s,
+        fadeIn 2s ease-in;
+        animation-delay: 3s;
+        animation-fill-mode: forwards; /*This will make the hidden attribute visible at and of animation*/
 }
 
 
@@ -249,6 +273,10 @@ nav ul li a{
 @keyframes invisible{
     0%{visibility: hidden;}
     100%{visibility: visible;}
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 
