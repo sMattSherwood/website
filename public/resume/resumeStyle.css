@@ -25,6 +25,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "resumeDownload resumeInBrowser";
+                          
     
 }
 
@@ -38,7 +39,7 @@ main{
 
 }
 .resumeDownload h1{
-    color: blue;
+    color: #e3b44d;
 }
 
 .resumeInBrowser{
@@ -49,7 +50,7 @@ main{
     align-items: center;
 }
 .resumeInBrowser h1{
-    color: blue;
+    color: #e3b44d;
 }
 
 
@@ -132,7 +133,7 @@ nav ul li a{
         justify-content: center;
         justify-items: center;
         list-style-type: none;
-        row-gap: 15%;
+        row-gap: 10%;
     } 
     .container{
         display: grid;
@@ -151,19 +152,29 @@ nav ul li a{
     nav ul{
         display: grid;
         grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
-        justify-content: center;
-        justify-items: center;
-        list-style-type: none;
-        row-gap: 0%; 
+
+        row-gap: 5%;
+        
+
     } 
     .container{
         display: grid;
         min-height: 100vh;
         grid-template-columns: 0.2fr 2fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: 1fr ;
         grid-template-areas:
             "sidebar content1"
-            "auto footer";      
+            "sidebar footer";      
+    }
+
+    nav ul li a img{
+        height: 90px;
+        width: 90px;
+        padding-right: 3%;
+    }
+    .contactInfo{
+        height: 70px;
+        width: 40px;
     }
 
     .content1 {
@@ -171,7 +182,6 @@ nav ul li a{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "resumeDownload resumeInBrowser";
-        
     }
 
 
