@@ -157,7 +157,7 @@ nav ul li a{
     .container{
         display: grid;
         min-height: 100vh;
-        grid-template-columns: 0.2fr 2fr;
+        grid-template-columns: 0.3fr 2fr;
         grid-template-rows: 1fr ;
         grid-template-areas:
             "sidebar content1"
