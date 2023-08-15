@@ -180,7 +180,7 @@ nav{
     width: 100%;
     grid-area: sidebar;
 }
-
+ /*Stat of footer styling*/
 footer{
     background-color: #444851;
     grid-area: footer;
@@ -192,9 +192,7 @@ footer ul{
 /*   justify-content: end; */ 
     grid-template-areas: "footer2 footer3 footer1";
     list-style-type: none; /*this will make the list dot disapear*/
-
 }
-
 .footer1{
     grid-area: footer1;
     padding-left: 50%;
@@ -216,6 +214,7 @@ footer ul{
     font-family: calling code;
     color: #d3d3d3;
 }
+/*end of footer styling*/
 
 /* this will allow the css grids work for the side nav bar display page icons in a row*/
 nav ul{
@@ -226,14 +225,12 @@ nav ul{
     list-style-type: none;
 }
 
-
-
 nav ul li a{
     text-decoration:none;
     
 }
 
-
+/*Start of Animation frames*/
 @keyframes caret {
     0%, 100%{border-color: transparent;}
     50%{border-color: whitesmoke;}
@@ -278,7 +275,7 @@ nav ul li a{
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
-
+/*End of animation frames*/
 
 
 
@@ -320,7 +317,7 @@ nav ul li a{
     .content1{
         grid-area: content1;
         display: grid;
-        margin-top: 19%;
+        margin-top: 0%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "personalWebsite drawingApp studentWebService";
         column-gap: 5%;
@@ -328,57 +325,28 @@ nav ul li a{
     }
 
 /*Personal Website Styles*/
-    .personalWebsite{
-        grid-area: personalWebsite;
-        display: flex;
-        order: 3;
-        flex-direction: column;
-        margin-top: 10%;
+    nav ul{
+        display: grid;
+        grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
+        row-gap: 5%;
+    } 
+    .container{
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 0.2fr 2fr;
+        grid-template-rows: 1fr ;
+        grid-template-areas:
+            "sidebar content1"
+            "sidebar footer";      
     }
-    /*
-    .personalWebsite iframe{
-        height: 300px;
-        width: 300px;
-       
-        animation:fadeIn 6s forwards;
+
+    nav ul li a img{
+        height: 90px;
+        width: 90px;
+        padding-right: 3%;
     }
-    .personalWebsite iframe.show{
-        opacity: 1;
-    }
-    */
-    .stuff{
-        opacity: 0;
-        transition: opacity 4s ease;
-    }
-    .stuff.show{
-        opacity: 1;
-    }
-    /*Drawing App Styles*/    
-    .drawingApp{
-        grid-area: drawingApp;
-        margin-top: -60%;
-        margin-bottom: 40%;
-        display: flex;
-        order: 3;
-        flex-direction: column;
-        justify-content: start;
-    }
-    
-    .drawingApp iframe{
-        height: 300px;
-        width: 300px;
-    }
-/*Web services styles */
-    .studentWebService{
-        grid-area: studentWebService;
-        display: flex;
-        order: 3;
-        flex-direction: column;
-        margin-top: 10%;
-    }
-    
-    .studentWebService iframe{
-        height: 300px;
-        width: 300px;
+    .contactInfo{
+        height: 70px;
+        width: 40px;
     }
 }

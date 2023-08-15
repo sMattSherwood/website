@@ -152,10 +152,7 @@ nav ul li a{
     nav ul{
         display: grid;
         grid-template-rows: repeat(5, 1fr); /* same as writing 1fr 1fr 1fr 1fr 1fr */
-
         row-gap: 5%;
-        
-
     } 
     .container{
         display: grid;
