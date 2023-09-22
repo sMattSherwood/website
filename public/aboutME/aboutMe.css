@@ -21,8 +21,146 @@ main{
 
 .content1{
     grid-area: content1;
-    row-gap: 5%;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr;
+    grid-template-areas: "picture aboutMeText"
+                         "name aboutMeText";
 }
+
+.aboutMeText{
+    grid-area: aboutMeText;
+    display: flex;
+    flex-direction:column;
+    color: #e3b44d;
+    font-family: cascadia code;
+    font-size: 2.2ch;
+    -ms-flex-align: start;
+
+
+}
+.line1{
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid whitesmoke;
+    animation:
+        invisible 3s,
+        caret 0.7s,
+        typist2 4s steps(66);
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+}
+.line2{
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid whitesmoke;
+    animation:
+        invisible 3s,
+        caret 0.7s,
+        typist3 4s steps(69);
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+}
+.line3{
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid whitesmoke;
+    animation:
+        invisible 3s,
+        caret 0.7s,
+        typist4 4s steps(71);
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+}
+.line4{
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid whitesmoke;
+    animation:
+        invisible 3s,
+        caret 0.7s,
+        typist5 4s steps(74);
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+}
+.line5{
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid whitesmoke;
+    animation:
+        invisible 3s,
+        caret 0.7s,
+        typist6 4s steps(75);
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+}
+.line6{
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid whitesmoke;
+    animation:
+        invisible 3s,
+        caret 0.7s,
+        typist7 4s steps(75);
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+}
+.line7{
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid whitesmoke;
+    animation:
+        invisible 3s,
+        caret 0.7s,
+        typist8 4s steps(79);
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+}
+.line8{
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid whitesmoke;
+    animation:
+        invisible 3s,
+        caret 0.7s,
+        typist9 4s steps(79);
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+}
+
+
+.name{
+    
+    color: #d3d3d3;
+    grid-area: name;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: cascadia code;
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid whitesmoke;
+    animation:
+        invisible 3s,
+        caret 0.7s,
+        typist 4s steps(16);
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+}
+
+.profilePicture{
+    grid-area: picture;
+    height: 80%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+        animation: 
+            invisible 1s,
+            fadeIn 3.5s ease-in;
+            animation-fill-mode: forwards;
+}
+
 
 nav{
     background-color: #393c44;
@@ -77,33 +215,75 @@ nav ul li a{
     text-decoration:none;
 }
 
-.personalInfo{
-    display: grid;
-    grid-template-columns: 1fr, 1fr ;
-    grid-template-rows: 1fr, 1fr ;
-    grid-template-areas: "picture aboutMe"
-                         "name aboutMe";
+@keyframes caret {
+    0%, 100%{border-color: transparent;}
+    50%{border-color: whitesmoke;}
 }
-
-
-.aboutMe{
-
-    grid-area: aboutMe;
-    text-align: center;
-    top: 50%;
+/*This is for my first and last name*/
+@keyframes typist {
+    0%{width:0ch;}
+    30%{width:16ch;}
+    80%{width:16ch;}
+    100%{border-right: none;}
 }
-
-.name{
-    grid-area: name;
+/*These typist are for the paragraph about me*/
+@keyframes typist2 {
+    0%{width:0ch;}
+    30%{width:66ch;}
+    80%{width:66ch;}
+    100%{border-right: none;}
 }
-
-.profilePicture{
-    grid-area: picture;
-    height: auto;
-    width: 100%;
+@keyframes typist3 {
+    0%{width:0ch;}
+    30%{width:69ch;}
+    80%{width:69ch;}
+    100%{border-right: none;}
 }
-
-
+@keyframes typist4 {
+    0%{width:0ch;}
+    30%{width:71ch;}
+    80%{width:71ch;}
+    100%{border-right: none;}
+}
+@keyframes typist5 {
+    0%{width:0ch;}
+    30%{width:74ch;}
+    80%{width:74ch;}
+    100%{border-right: none;}
+}
+@keyframes typist6 {
+    0%{width:0ch;}
+    30%{width:75ch;}
+    80%{width:75ch;}
+    100%{border-right: none;}
+}
+@keyframes typist7 {
+    0%{width:0ch;}
+    30%{width:75ch;}
+    80%{width:75ch;}
+    100%{border-right: none;}
+}
+@keyframes typist8 {
+    0%{width:0ch;}
+    30%{width:79ch;}
+    80%{width:79ch;}
+    100%{border-right: none;}
+}
+@keyframes typist9 {
+    0%{width:0ch;}
+    30%{width:79ch;}
+    80%{width:79ch;}
+    100%{border-right: none;}
+}
+/*End of the typist for paragraph*/
+@keyframes invisible{
+    0%{visibility: hidden;}
+    100%{visibility: visible;}
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
 /*when a user is using thier phone these will be the dimentions*/
 @media only screen and (max-width:550px){
@@ -168,12 +348,19 @@ nav ul li a{
         grid-area: content1;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "resumeDownload resumeInBrowser";
+        grid-template-rows: 1fr 0.2fr;
+        grid-template-areas: "picture aboutMeText"
+                             "name aboutMeText";
     }
     .profilePicture{
         grid-area: picture;
-        height: auto;
-        width: 100%;
+        height: 300px;
+        width: 300px;
+        visibility: hidden;
+        animation: 
+            invisible 1s,
+            fadeIn 3.5s ease-in;
+            animation-fill-mode: forwards;
     }
 
     
