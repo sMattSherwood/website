@@ -47,9 +47,10 @@ main{
     animation:
         invisible 3s,
         caret 0.7s,
-        typist2 4s steps(66);
+        typist2 4s steps(63);
         animation-fill-mode: forwards;
         white-space: nowrap;
+        animation-delay: 1.1s;
 }
 .line2{
     overflow: hidden;
@@ -58,9 +59,10 @@ main{
     animation:
         invisible 3s,
         caret 0.7s,
-        typist3 4s steps(69);
+        typist3 4s steps(68);
         animation-fill-mode: forwards;
         white-space: nowrap;
+        animation-delay: 2s;
 }
 .line3{
     overflow: hidden;
@@ -69,11 +71,24 @@ main{
     animation:
         invisible 3s,
         caret 0.7s,
-        typist4 4s steps(71);
+        typist3 4s steps(68);
         animation-fill-mode: forwards;
         white-space: nowrap;
+        animation-delay: 3s;
 }
 .line4{
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 3px solid whitesmoke;
+    animation:
+        invisible 3s,
+        caret 0.7s,
+        typist4 4s steps(73);
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+        animation-delay: 4s;
+}
+.line5{
     overflow: hidden;
     visibility: hidden;
     border-right: 3px solid whitesmoke;
@@ -83,8 +98,9 @@ main{
         typist5 4s steps(74);
         animation-fill-mode: forwards;
         white-space: nowrap;
+        animation-delay: 5s;
 }
-.line5{
+.line6{
     overflow: hidden;
     visibility: hidden;
     border-right: 3px solid whitesmoke;
@@ -94,17 +110,7 @@ main{
         typist6 4s steps(75);
         animation-fill-mode: forwards;
         white-space: nowrap;
-}
-.line6{
-    overflow: hidden;
-    visibility: hidden;
-    border-right: 3px solid whitesmoke;
-    animation:
-        invisible 3s,
-        caret 0.7s,
-        typist7 4s steps(75);
-        animation-fill-mode: forwards;
-        white-space: nowrap;
+        animation-delay: 6s;
 }
 .line7{
     overflow: hidden;
@@ -113,9 +119,10 @@ main{
     animation:
         invisible 3s,
         caret 0.7s,
-        typist8 4s steps(79);
+        typist7 4s steps(79);
         animation-fill-mode: forwards;
         white-space: nowrap;
+        animation-delay: 7s;
 }
 .line8{
     overflow: hidden;
@@ -124,9 +131,10 @@ main{
     animation:
         invisible 3s,
         caret 0.7s,
-        typist9 4s steps(79);
+        typist8 4s steps(83);
         animation-fill-mode: forwards;
         white-space: nowrap;
+        animation-delay: 8s;
 }
 
 
@@ -146,6 +154,7 @@ main{
         typist 4s steps(16);
         animation-fill-mode: forwards;
         white-space: nowrap;
+        animation-delay: 1s;
 }
 
 .profilePicture{
@@ -229,20 +238,20 @@ nav ul li a{
 /*These typist are for the paragraph about me*/
 @keyframes typist2 {
     0%{width:0ch;}
-    30%{width:66ch;}
-    80%{width:66ch;}
+    30%{width:63ch;}
+    80%{width:63ch;}
     100%{border-right: none;}
 }
 @keyframes typist3 {
     0%{width:0ch;}
-    30%{width:69ch;}
-    80%{width:69ch;}
+    30%{width:68ch;}
+    80%{width:68ch;}
     100%{border-right: none;}
 }
 @keyframes typist4 {
     0%{width:0ch;}
-    30%{width:71ch;}
-    80%{width:71ch;}
+    30%{width:73ch;}
+    80%{width:73ch;}
     100%{border-right: none;}
 }
 @keyframes typist5 {
@@ -259,20 +268,14 @@ nav ul li a{
 }
 @keyframes typist7 {
     0%{width:0ch;}
-    30%{width:75ch;}
-    80%{width:75ch;}
+    30%{width:79ch;}
+    80%{width:79ch;}
     100%{border-right: none;}
 }
 @keyframes typist8 {
     0%{width:0ch;}
-    30%{width:79ch;}
-    80%{width:79ch;}
-    100%{border-right: none;}
-}
-@keyframes typist9 {
-    0%{width:0ch;}
-    30%{width:79ch;}
-    80%{width:79ch;}
+    30%{width:81ch;}
+    80%{width:81ch;}
     100%{border-right: none;}
 }
 /*End of the typist for paragraph*/
