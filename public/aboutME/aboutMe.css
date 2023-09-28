@@ -365,6 +365,17 @@ nav ul li a{
             fadeIn 3.5s ease-in;
             animation-fill-mode: forwards;
     }
+    .aboutMeText{
+        grid-area: aboutMeText;
+        display: flex;
+        flex-direction:column;
+        color: #e3b44d;
+        font-family: cascadia code;
+        font-size: 1.6ch;
+        -ms-flex-align: start;
+    
+    
+    }
 
     
 }
