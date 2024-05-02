@@ -47,14 +47,57 @@ main{
 .AboutMe1{
     flex-grow: 1;
     border-style: solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
 }
 .AboutMe2{
     flex-grow: 1;
     border-style: solid;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    align-items: center;
 }
 .AboutMe3{
     flex-grow: 1;
     border-style: solid;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20%;
+    align-items: center;
+}
+
+/* theses divs will be our cercles */
+.TravelImg{
+    height: 40%;
+    width: 5%;
+    border-radius: 50%;
+    border: 5px solid #393c44;
+    object-fit: contain;
+    opacity: 80%;
+    margin-right: 1%;
+    
+    
+}
+.GamingImg{
+    height: 40%;
+    width: 5%;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 5px solid #393c44;
+    opacity: 80%;
+    margin-right: 1%;
+}
+.WorkoutImg{
+    height: 40%;
+    width: 5%;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 5px solid #393c44;
+    opacity: 80%;
+    margin-right: 1%;
 }
 
 
@@ -109,71 +152,6 @@ nav ul{
 
 nav ul li a{
     text-decoration:none;
-}
-
-
-@keyframes caret {
-    0%, 100%{border-color: transparent;}
-    50%{border-color: whitesmoke;}
-}
-/*This is for my first and last name*/
-@keyframes typist {
-    0%{width:0ch;}
-    30%{width:16ch;}
-    80%{width:16ch;}
-    100%{border-right: none;}
-}
-/*These typist are for the paragraph about me*/
-@keyframes typist2 {
-    0%{width:0ch;}
-    30%{width:63ch;}
-    80%{width:63ch;}
-    100%{border-right: none;}
-}
-@keyframes typist3 {
-    0%{width:0ch;}
-    30%{width:68ch;}
-    80%{width:68ch;}
-    100%{border-right: none;}
-}
-@keyframes typist4 {
-    0%{width:0ch;}
-    30%{width:73ch;}
-    80%{width:73ch;}
-    100%{border-right: none;}
-}
-@keyframes typist5 {
-    0%{width:0ch;}
-    30%{width:74ch;}
-    80%{width:74ch;}
-    100%{border-right: none;}
-}
-@keyframes typist6 {
-    0%{width:0ch;}
-    30%{width:75ch;}
-    80%{width:75ch;}
-    100%{border-right: none;}
-}
-@keyframes typist7 {
-    0%{width:0ch;}
-    30%{width:79ch;}
-    80%{width:79ch;}
-    100%{border-right: none;}
-}
-@keyframes typist8 {
-    0%{width:0ch;}
-    30%{width:81ch;}
-    80%{width:81ch;}
-    100%{border-right: none;}
-}
-/*End of the typist for paragraph*/
-@keyframes invisible{
-    0%{visibility: hidden;}
-    100%{visibility: visible;}
-}
-@keyframes fadeIn{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
 }
 
 /*when a user is using thier phone these will be the dimentions*/
