@@ -43,14 +43,13 @@ main{
     flex-direction: column;
     justify-content: space-around;
 }
-/*Content*/
+/*Three Flex boxes that will determine about me information Image/Text*/
 .AboutMe1{
     flex-grow: 1;
     border-style: solid;
     display: flex;
     flex-direction: row;
     align-items: center;
-    
 }
 .AboutMe2{
     flex-grow: 1;
@@ -69,7 +68,10 @@ main{
     align-items: center;
 }
 
+
 /* theses divs will be our cercles */
+
+/*Traveling styling properties and hover property*/
 .TravelImg{
     height: 40%;
     width: 5%;
@@ -78,10 +80,20 @@ main{
     object-fit: contain;
     opacity: 80%;
     margin-right: 1%;
-    
-    
+    margin-left: 1%;
+    transition: 1s; /*when cursor goes away the image slowly goes back to normal*/
 }
-.GamingImg{
+.TravelImg:hover{
+    border: 5px solid #88abd3;
+    transform: scale(1.05);
+    transition: 1s;
+}
+.TravelText{
+    color: #47e7df;
+    font-family: cascadia code;
+}
+/*Gamming Styling properties and hover property*/
+.GammingImg{
     height: 40%;
     width: 5%;
     border-radius: 50%;
@@ -89,7 +101,19 @@ main{
     border: 5px solid #393c44;
     opacity: 80%;
     margin-right: 1%;
+    margin-left: 1%;
+    transition: 1s; /*when cursor goes away the image slowly goes back to normal*/
 }
+.GammingImg:hover{
+    border: 5px solid #88abd3;
+    transform: scale(1.05);
+    transition: 1s;
+}
+.GammingText{
+    color: #71752f;
+    font-family: cascadia code;
+}
+/*Working out styling properties and hover property*/
 .WorkoutImg{
     height: 40%;
     width: 5%;
@@ -98,7 +122,19 @@ main{
     border: 5px solid #393c44;
     opacity: 80%;
     margin-right: 1%;
+    margin-left: 1%;
+    transition: 1s; /*when cursor goes away the image slowly goes back to normal*/
 }
+.WorkoutImg:hover{
+    border: 5px solid #88abd3;
+    transform: scale(1.05);
+    transition: 1s;
+}
+.WorkoutText{
+    color: #c88df1;
+    font-family: cascadia code;
+}
+/*End of div circle properties*/
 
 
 nav{
@@ -153,6 +189,8 @@ nav ul{
 nav ul li a{
     text-decoration:none;
 }
+
+
 
 /*when a user is using thier phone these will be the dimentions*/
 @media only screen and (max-width:550px){
@@ -239,9 +277,5 @@ nav ul li a{
         font-family: cascadia code;
         font-size: 1.6ch;
         -ms-flex-align: start;
-    
-    
-    }
-
-    
+    }  
 }
