@@ -91,6 +91,8 @@ main{
 .TravelText{
     color: #47e7df;
     font-family: cascadia code;
+    animation: 
+        typist1 2.5s;  
 }
 /*Gamming Styling properties and hover property*/
 .GammingImg{
@@ -112,6 +114,8 @@ main{
 .GammingText{
     color: #71752f;
     font-family: cascadia code;
+    animation: 
+        typist1 2.5s;
 }
 /*Working out styling properties and hover property*/
 .WorkoutImg{
@@ -133,6 +137,8 @@ main{
 .WorkoutText{
     color: #c88df1;
     font-family: cascadia code;
+    animation: 
+        typist1 2.5s;
 }
 /*End of div circle properties*/
 
@@ -188,6 +194,14 @@ nav ul{
 
 nav ul li a{
     text-decoration:none;
+}
+
+/*Animations*/
+
+/*this will display the flashing cursor*/
+@keyframes typist1 {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 
