@@ -1,3 +1,13 @@
+.mobileContainer{
+    display: none;
+}
+
+.Intro{
+    display: none;
+}
+.Skills{
+    display: none;
+}
 body
 {
     height: 100%;
@@ -344,6 +354,17 @@ nav ul li a{
     footer,
     .content1,
     .text1,.text2,.text3,.text4,.text5,.text5-1,.text5-2,.text5-3,.text6,.text7{display: none;}
+
+    .mobileContainer{
+        display: block;
+    }
+    
+    .Intro{
+        display: block;
+    }
+    .Skills{
+        display: block;
+    }
    
 }
 
