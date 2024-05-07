@@ -338,13 +338,13 @@ nav ul li a{
 
 /*when a user is using thier phone these will be the dimentions*/
 @media only screen and (max-width:550px){
-    .container{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-            "nav"
-            "main"
-            "footer";
-    }
+    /*this will clear all css and html from desktop*/
+    .container,
+    nav,
+    footer,
+    .content1,
+    .text1,.text2,.text3,.text4,.text5,.text5-1,.text5-2,.text5-3,.text6,.text7{display: none;}
+   
 }
 
 @media only screen and (max-width:1920px){
@@ -384,10 +384,6 @@ nav ul li a{
     }
 }
 
-@media screen and (max-width: 1280) {
-
-}
-
 @media (min-resolution: 1.5dppx) {
     /* this squches the buttons for the webpages togeather so the screen at the bottom dosn't look weird*/
     nav ul{
@@ -421,7 +417,7 @@ nav ul li a{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "resumeDownload resumeInBrowser";
     }
-    } 
+}
 
 
 
