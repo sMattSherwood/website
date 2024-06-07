@@ -1,14 +1,22 @@
 .mobileContainer{
     display: none;
 }
-
+.NameBorder{
+    display: none;
+}
 .Intro{
+    display: none;
+}
+.SkillBorder{
     display: none;
 }
 .Skills{
     display: none;
 }
-.personalInfo{
+.PersonalInfoBorder{
+    display: none;
+}
+.PersonalInfo{
     display: none;
 }
 body
@@ -357,19 +365,72 @@ nav ul li a{
     footer,
     .content1,
     .text1,.text2,.text3,.text4,.text5,.text5-1,.text5-2,.text5-3,.text6,.text7{display: none;}
+    .content1{
+        display: none;
+    }
 
     .mobileContainer{
         display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+    .NameBorder{
+        display: block;
+        border-style: solid;
+        border-color: #b9b9b9a2;
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    } 
+    .NameBorder h1{
+        font-family: cascadia code;
+        color: #222222;
     }
     
     .Intro{
         display: block;
     }
+    .Intro p{
+        padding-left: 5%
+    }
     .Skills{
         display: block;
+        padding-left: 5%;
     }
-    .personalInfo{
+    .SkillBorder{
         display: block;
+        border-style: solid;
+        border-color: #b9b9b9a2;
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .SkillBorder h1{
+        font-family: cascadia code;
+        color: #222222;
+    }
+    .PersonalInfoBorder{
+        display: block;
+        border-style: solid;
+        border-color: #b9b9b9a2;
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .PersonalInfoBorder h1{
+        font-family: cascadia code;
+        color: #222222;
+    }
+    .PersonalInfo{
+        display: block;
+        padding-left: 5%;
     }
    
 }
