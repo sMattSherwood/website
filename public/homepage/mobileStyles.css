@@ -1,0 +1,72 @@
+
+    /*this will clear all css and html from desktop*/
+    .container,
+    nav,
+    footer,
+    .content1,
+    .text1,.text2,.text3,.text4,.text5,.text5-1,.text5-2,.text5-3,.text6,.text7,.footer1,.footer2,.footer3{display: none;}
+    
+    .mobileContainer{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+    .NameBorder{
+        display: block;
+        border-style: solid;
+        border-color: #b9b9b9a2;
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    } 
+    .NameBorder h1{
+        font-family: cascadia code;
+        color: #222222;
+    }
+    
+    .Intro{
+        display: block;
+    }
+    .Intro p{
+        padding-left: 5%
+    }
+    .Skills{
+        display: block;
+        padding-left: 5%;
+    }
+    .SkillBorder{
+        display: block;
+        border-style: solid;
+        border-color: #b9b9b9a2;
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .SkillBorder h1{
+        font-family: cascadia code;
+        color: #222222;
+    }
+    .PersonalInfoBorder{
+        display: block;
+        border-style: solid;
+        border-color: #b9b9b9a2;
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .PersonalInfoBorder h1{
+        font-family: cascadia code;
+        color: #222222;
+    }
+    .PersonalInfo{
+        display: block;
+        padding-left: 5%;
+    }
+   
