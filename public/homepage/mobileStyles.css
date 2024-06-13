@@ -5,15 +5,19 @@
     footer,
     .content1,
     .text1,.text2,.text3,.text4,.text5,.text5-1,.text5-2,.text5-3,.text6,.text7,.footer1,.footer2,.footer3{display: none;}
-    
+    body
+    {
+        height: 100%;
+        margin: 0%;
+        background-color: #4b5368;
+    }
     .mobileContainer{
-        display: block;
         display: flex;
         flex-direction: column;
         justify-content: center; 
+        flex-wrap: wrap;
     }
     .NameBorder{
-        display: block;
         border-style: solid;
         border-color: #b9b9b9a2;
         display: flex;
@@ -24,21 +28,22 @@
     } 
     .NameBorder h1{
         font-family: cascadia code;
-        color: #222222;
+        color: #e9d8d8;
     }
     
     .Intro{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
     .Intro p{
-        padding-left: 5%
-    }
-    .Skills{
-        display: block;
         padding-left: 5%;
+        padding-right: 5%;
+        font-family: cascadia code;
+        color: #e3b44d;
     }
+    
     .SkillBorder{
-        display: block;
         border-style: solid;
         border-color: #b9b9b9a2;
         display: flex;
@@ -49,10 +54,21 @@
     }
     .SkillBorder h1{
         font-family: cascadia code;
-        color: #222222;
+        color: #e9d8d8;
     }
+    .Skills{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+    }
+    .Skills p{
+        padding-left: 5%;
+        padding-right: 5%;
+        font-family: cascadia code;
+        color: #91b74a;
+    }
+
     .PersonalInfoBorder{
-        display: block;
         border-style: solid;
         border-color: #b9b9b9a2;
         display: flex;
@@ -63,10 +79,17 @@
     }
     .PersonalInfoBorder h1{
         font-family: cascadia code;
-        color: #222222;
+        color: #e9d8d8;
     }
     .PersonalInfo{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-grow: grow;
+    }
+    .PersonalInfo p{
         padding-left: 5%;
+        padding-right: 5%;
+        font-family: cascadia code;
+        color: #30a09a;
     }
    
