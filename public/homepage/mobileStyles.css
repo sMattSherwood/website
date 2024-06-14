@@ -78,13 +78,21 @@
         font-family: cascadia code;
         color: #91b74a;
     }
-
+    .ProgramingLanguages{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ProgramingLanguages img{
+        height: 35%;
+        width: 35%;
+    }
     .PersonalInfoBorder{
         border-style: solid;
         border-color: #b9b9b9a2;
         display: flex;
         justify-content: center;
-        margin-top: 15%;
         margin-left: 10%;
         margin-right: 10%;
     }
