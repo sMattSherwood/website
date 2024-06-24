@@ -13,15 +13,14 @@
         console.log(todaysDate);// check to see if it's displaying the date
         //dipslays the date in the paragraph tag
         document.getElementById("currentDate").innerHTML = todaysDate;
-
+        carousel();
         
 
         
 
     })
-
+    // this will apply Css depending if it's on a Moble Phone or Desktop Computer
     function displayCss(){
-        // this will apply Css depending if it's on a Moble Phone or Desktop Computer
         let width = window.innerWidth;
         // this will display the mobile css
         if(width <= 550) {
@@ -40,3 +39,47 @@
             document.head.appendChild(link);
         }
     }
+
+    // this will allow the carosel to dynamicaly be created
+    function carousel(){
+        // this will dynamicaly create the navigation div and populate
+    document.querySelectorAll(".carousel").forEach(carousel =>{
+        const items = carousel.querySelectorAll(".carousel__item");
+        // this is where the button spans will be generated
+        const buttonsHtml = Array.from(items, () =>{
+            return `<Span class="carousel__button"></span>`;
+        });
+        // we will insert buttons into the html by calling the buttonsHtml arrow function
+        carousel.insertAdjacentHTML("beforeend", `
+            <div class="carousel__nav">
+                ${buttonsHtml.join("")}
+            </div>
+            `);
+        
+        //this will display the button array
+        console.log(buttonsHtml);
+
+        //create a list of all buttons
+        const buttons = carousel.querySelectorAll(".carousel__button");
+
+        buttons.forEach((button, i) =>{
+            button.addEventListener("click", () =>{
+                items.forEach(item => item.classList.remove("carousel__item--selected"));
+                buttons.forEach(button => button.classList.remove("carousel__button--selected"))
+
+                items[i].classList.add("carousel__item--selected");
+                button.classList.add("carousel__button--selected");
+            });
+        });
+        items[0].classList.add("carousel__item--selected");
+        buttons[0].classList.add("carousel__button--selected");
+    });
+}
+
+
+
+
+
+
+
+

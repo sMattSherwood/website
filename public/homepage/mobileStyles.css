@@ -100,15 +100,70 @@
         font-family: cascadia code;
         color: #e9d8d8;
     }
-    .PersonalInfo{
-        display: flex;
-        flex-direction: column;
-        flex-grow: grow;
+    
+    /*This is styling is used for the carousel*/
+    .carousel {
+        position: relative;
     }
-    .PersonalInfo p{
-        padding-left: 5%;
-        padding-right: 5%;
-        font-family: cascadia code;
-        color: #30a09a;
+    .carousel__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+        height: 50%;
+        background: grey;
+        padding: 1em;
+        font-family: 'Qicksand', sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        color: white;
+        display: none;
+    }
+    .carousel__item img{
+        height: 40%;
+        width: 40%;
+    }
+    .carousel__item--selected{
+        display:block;
+    }
+    
+    .carousel__nav{
+        width: 100%;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    }
+    .carousel__button{
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-color: rgba(100, 102, 101, 0.692);
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    .carousel__button--selected{
+        background-color: rgba(163, 163, 163, 0.788);
+    }
+    /*end of carousel Styling*/
+
+    /*this is for the carosel for information about me*/
+    .Slide{
+        animation-name: fading;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
+    .Prev{
+
+    }
+    .Next{
+
+    }
+
+    @keyframes fading{
+        0% {opacity: 0;}
+        50% {opacity: 1;}
+        100% {opacity: 0;}
     }
    
