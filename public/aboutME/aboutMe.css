@@ -30,7 +30,6 @@ main{
     margin: 0 auto; /* Centers the div horizontally */
     padding: 60px; /* Add padding to the div */
     box-sizing: border-box;
-    opacity: 70%;
     /* Border Styling */
     border-width: 10px;
     border-bottom-right-radius: 4%;
@@ -42,6 +41,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    transform: scale(1.05);
+    animation: 
+        typist1 3s;
 }
 /*Three Flex boxes that will determine about me information Image/Text*/
 .AboutMe1{
@@ -203,6 +205,8 @@ nav ul li a{
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
+
+
 
 
 
