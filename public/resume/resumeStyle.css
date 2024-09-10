@@ -36,7 +36,7 @@ main{
     justify-content: center;
     align-items: center;
     border-right: 10px solid #393c44;
-    animation: fillBorder 1s linear forwards;
+    animation: fillBorder 0.7s linear forwards;
 }
 .resumeDownload h1{
     color: #e3b44d;
@@ -49,7 +49,7 @@ main{
             caret 0.7s;
         animation-fill-mode: forwards;
         white-space: nowrap;  
-        animation-delay: 1s;      
+        animation-delay: 0.7s;      
 }
 .resumeDownload a{
     visibility: hidden;
@@ -57,7 +57,7 @@ main{
             invisible 1s,
             fadeIn 3.5s ease-in;
          animation-fill-mode: forwards;
-         animation-delay: 1.65s;
+         animation-delay: 1s;
 }
 /*the open broser functionality*/
 .resumeInBrowser{
@@ -78,7 +78,7 @@ main{
             caret 0.7s;
         animation-fill-mode: forwards;
         white-space: nowrap;
-        animation-delay: 2.2s;
+        animation-delay: 1.5s;
 }
 .resumeInBrowser a{
     visibility: hidden;
@@ -86,7 +86,7 @@ main{
             invisible 1s,
             fadeIn 3.5s ease-in;
         animation-fill-mode: forwards;
-        animation-delay: 2.95s;
+        animation-delay: 1.7s;
 
 }
 
