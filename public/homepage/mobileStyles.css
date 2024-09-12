@@ -19,26 +19,30 @@
         align-items: center;
         justify-content: space-between;
         height: 100vh;
-        row-gap: 50vh;
+        
         overflow-y: scroll;
         scroll-snap-type: y mandatory ;
     }
-    .page{
-        height: 100vh;
+    .page1{
         scroll-snap-align: start;
+        background-color: red;
     }
+    /*Section 1*/
     .NameBorder{
         border-style: solid;
         border-color: #b9b9b9a2;
         display: flex;
         justify-content: center;
         margin-top: 15%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 10%;
     } 
     .NameBorder h1{
-        font-family: cascadia code;
+        font-family: Akira Expanded;
+        font-size: 4.1em;
         color: #e9d8d8;
+        padding-left: 10%;
     }
     
     .Intro{
@@ -50,8 +54,32 @@
     .Intro p{
         padding-left: 5%;
         padding-right: 5%;
+        font-size: 1.2em;
         font-family: cascadia code;
         color: #e3b44d;
+    }
+    .UpperOvalContainer{
+        background-color: red;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .upperOval{
+        width: 100vw;
+        height: 60px;
+        background-color: yellow;
+        align-self: center;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    /*Section 2*/
+    .page2{
+        scroll-snap-align: start;
+        background-color: yellow;  
     }
     
     .SkillBorder{
@@ -64,29 +92,48 @@
         margin-right: 10%;
     }
     .SkillBorder h1{
-        font-family: cascadia code;
+        font-family: Akira Expanded;
+        font-size: 4.1em;
         color: #e9d8d8;
     }
-    .Skills{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction:column;
-    }
-    .Skills p{
-        padding-left: 5%;
-        padding-right: 5%;
-        font-family: cascadia code;
-        color: #91b74a;
-    }
-    .ProgramingLanguages{
+    .programIcons{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .ProgramingLanguages img{
-        height: 35%;
-        width: 35%;
+    .programIcons img{
+        height: 30%;
+        width: 30%;
+    }
+    .programingLanguage{
+        font-family: cascadia code;
+        color:#30a09a;
+        font-size: 1.1em;
+    }
+    .lowerOvalContainer{
+        background-color: red;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lowerOvalContainer{
+        width: 100vw;
+        height: 60px;
+        background-color: yellow;
+        align-self: center;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+
+    }
+    /*section 3*/
+    .page3{
+        scroll-snap-align: start;
+        background-color: red;
     }
     .PersonalInfoBorder{
         border-style: solid;
@@ -99,7 +146,9 @@
     .PersonalInfoBorder h1{
         font-family: cascadia code;
         color: #e9d8d8;
+        
     }
+    
     
     /*This is styling is used for the carousel*/
     .carousel {
